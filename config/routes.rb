@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'gallery/index'
+
   get 'news/index'
 
   get 'resume/index'
@@ -7,7 +9,9 @@ Rails.application.routes.draw do
 
   get 'sitemap/index'
 
-  get 'welcome/index'
+  get 'welcome',
+      to: 'welcome#index',
+      as: 'welcome_page'
 
   get 'aboutme/index'
 

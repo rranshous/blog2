@@ -1,0 +1,16 @@
+<img src="/assets/IMG_0093.jpg"/>
+<img src="/assets/IMG_0100.jpg"/>
+<img src="/assets/IMG_0102.jpg"/>
+<img src="/assets/IMG_0146.jpg"/>
+
+<hr/>
+
+<ul>
+<% ['IMG_0093','IMG_0100','IMG_0102','IMG_0146'].each do |value| %>
+    <%=  image_tag(value + '.jpg')  %>
+<% end %>
+</ul>
+
+<style>
+	img { width: 20%; }
+</style>
